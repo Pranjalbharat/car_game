@@ -55,6 +55,7 @@ class GameOverlayState extends State<GameOverlay> {
             ),
           ),
           // if (isMobile)
+          const SizedBox(child: Text("9 *4 ",style: TextStyle(color: Colors.amberAccent,fontSize: 20,),textAlign: TextAlign.center,),),
           Positioned(
             bottom: 10,
             child: SizedBox(

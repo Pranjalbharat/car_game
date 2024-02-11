@@ -19,5 +19,7 @@ class BackGround extends ParallaxComponent<CarRace> {
       baseVelocity: Vector2(0, -70 * backgroundSpeed.toDouble()),
       velocityMultiplierDelta: Vector2(0, 1.2 * backgroundSpeed),
     );
+
+    position = Vector2.zero();
   }
 }

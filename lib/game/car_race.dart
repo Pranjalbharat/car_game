@@ -117,6 +117,7 @@ class CarRace extends FlameGame
   void onLose() {
     gameManager.state = GameState.gameOver;
     player.removeFromParent();
+    
     FlameAudio.bgm.stop();
     overlays.add('gameOverOverlay');
   }

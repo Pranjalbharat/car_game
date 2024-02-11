@@ -34,6 +34,11 @@ class Player extends SpriteGroupComponent<PlayerState>
     await add(CircleHitbox());
     await _loadCharacterSprites();
     current = PlayerState.center;
+
+    position = Vector2(
+      (gameRef.size.x - size.x) / 2,
+    ((gameRef.size.y - size.y) / 2)-60,
+    );
   }
 
   @override
@@ -107,7 +112,7 @@ class Player extends SpriteGroupComponent<PlayerState>
   void resetPosition() {
     position = Vector2(
       (gameRef.size.x - size.x) / 2,
-      (gameRef.size.y - size.y) / 2,
+      ((gameRef.size.y - size.y) / 2)-60,
     );
   }
 
